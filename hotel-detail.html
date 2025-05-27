@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Plaza Hotel - SkyStars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (Same as index.html) -->
+    <nav>
+        <div class="logo">SkyStars</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+        <div class="language-selector">
+            <select>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Hotel Header -->
+    <section class="hotel-header">
+        <div class="container">
+            <h1>Grand Plaza Hotel</h1>
+            <div class="hotel-info">
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">428 reviews</span>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Main Street, Paris, France</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Gallery -->
+    <section class="hotel-gallery">
+        <div class="main-image">
+            <img src="https://source.unsplash.com/1200x600/?hotel,luxury" alt="Grand Plaza Hotel">
+        </div>
+        <div class="thumbnail-grid">
+            <div class="thumbnail">
+                <img src="https://source.unsplash.com/400x300/?hotel,room" alt="Hotel Room">
+            </div>
+            <div class="thumbnail">
+                <img src="https://source.unsplash.com/400x300/?hotel,pool" alt="Hotel Pool">
+            </div>
+            <div class="thumbnail">
+                <img src="https://source.unsplash.com/400x300/?hotel,restaurant" alt="Hotel Restaurant">
+            </div>
+            <div class="thumbnail">
+                <img src="https://source.unsplash.com/400x300/?hotel,gym" alt="Hotel Gym">
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Details -->
+    <section class="hotel-details">
+        <div class="container">
+            <div class="details-grid">
+                <!-- Overview -->
+                <div class="overview">
+                    <h2>Overview</h2>
+                    <p>Experience luxury at its finest at the Grand Plaza Hotel. Located in the heart of Paris, our 5-star hotel offers world-class amenities, exquisite dining options, and breathtaking views of the city skyline.</p>
+                    <ul class="highlights">
+                        <li><i class="fas fa-wifi"></i> Free high-speed WiFi</li>
+                        <li><i class="fas fa-swimming-pool"></i> Rooftop infinity pool</li>
+                        <li><i class="fas fa-utensils"></i> 3 on-site restaurants</li>
+                        <li><i class="fas fa-spa"></i> Full-service spa</li>
+                        <li><i class="fas fa-dumbbell"></i> 24/7 fitness center</li>
+                    </ul>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="booking-form">
+                    <h2>Book Your Stay</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="check-in">Check-in</label>
+                            <input type="date" id="check-in">
+                        </div>
+                        <div class="form-group">
+                            <label for="check-out">Check-out</label>
+                            <input type="date" id="check-out">
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Guests</label>
+                            <select id="guests">
+                                <option>1 Adult</option>
+                                <option>2 Adults</option>
+                                <option>Family</option>
+                            </select>
+                        </div>
+                        <div class="price-summary">
+                            <div class="price-item">
+                                <span>$189 x 3 nights</span>
+                                <span>$567</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Taxes & Fees</span>
+                                <span>$85</span>
+                            </div>
+                            <div class="total-price">
+                                <span>Total</span>
+                                <span>$652</span>
+                            </div>
+                        </div>
+                        <button type="submit">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities-section">
+        <div class="container">
+            <h2>Amenities</h2>
+            <div class="amenities-grid">
+                <div class="amenity">
+                    <i class="fas fa-wifi"></i>
+                    <span>Free WiFi</span>
+                </div>
+                <div class="amenity">
+                    <i class="fas fa-swimming-pool"></i>
+                    <span>Pool</span>
+                </div>
+                <div class="amenity">
+                    <i class="fas fa-utensils"></i>
+                    <span>Restaurant</span>
+                </div>
+                <div class="amenity">
+                    <i class="fas fa-spa"></i>
+                    <span>Spa</span>
+                </div>
+                <div class="amenity">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>Gym</span>
+                </div>
+                <div class="amenity">
+                    <i class="fas fa-parking"></i>
+                    <span>Parking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2>Guest Reviews</h2>
+            <div class="review-cards">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="user-info">
+                            <div class="avatar">JS</div>
+                            <div class="user-details">
+                                <span class="name">John Smith</span>
+                                <span class="date">March 2025</span>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Absolutely stunning hotel! The service was impeccable, and the rooms were spacious and luxurious. The rooftop pool has an amazing view of the city. Highly recommend!</p>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="user-info">
+                            <div class="avatar">EM</div>
+                            <div class="user-details">
+                                <span class="name">Emily Martinez</span>
+                                <span class="date">February 2025</span>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Great experience overall. The staff was very friendly and helpful. The only minor issue was the wait time at the restaurant during peak hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SkyStars</h3>
+                <p>Your global travel companion</p>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SkyStars. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyStars - Your Global Travel Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">SkyStars</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+        <div class="language-selector">
+            <select>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="search-container">
+            <h1>Your Journey Starts Here</h1>
+            <div class="search-tabs">
+                <button class="active">Hotels</button>
+                <button>Flights</button>
+                <button>Car Rentals</button>
+            </div>
+            <form class="search-form">
+                <div class="input-group">
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" placeholder="Where are you going?">
+                </div>
+                <div class="input-group">
+                    <label for="check-in">Check-in</label>
+                    <input type="date" id="check-in">
+                </div>
+                <div class="input-group">
+                    <label for="check-out">Check-out</label>
+                    <input type="date" id="check-out">
+                </div>
+                <div class="input-group">
+                    <label for="guests">Guests</label>
+                    <select id="guests">
+                        <option>1 Adult</option>
+                        <option>2 Adults</option>
+                        <option>Family</option>
+                    </select>
+                </div>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <section class="features">
+            <h2>Why Choose SkyStars?</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <i class="fas fa-hotel"></i>
+                    <h3>1M+ Hotels</h3>
+                    <p>Find the perfect stay anywhere in the world</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-plane"></i>
+                    <h3>Best Flight Deals</h3>
+                    <p>Compare prices from all major airlines</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Coverage</h3>
+                    <p>Explore destinations worldwide</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="destinations">
+            <h2>Popular Destinations</h2>
+            <div class="destination-grid">
+                <div class="destination-card">
+                    <img src="https://source.unsplash.com/400x300/?paris" alt="Paris">
+                    <div class="overlay">
+                        <h3>Paris</h3>
+                        <p>City of Lights</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://source.unsplash.com/400x300/?tokyo" alt="Tokyo">
+                    <div class="overlay">
+                        <h3>Tokyo</h3>
+                        <p>Modern Metropolis</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://source.unsplash.com/400x300/?new york" alt="New York">
+                    <div class="overlay">
+                        <h3>New York</h3>
+                        <p>The Big Apple</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SkyStars</h3>
+                <p>Your global travel companion</p>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SkyStars. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

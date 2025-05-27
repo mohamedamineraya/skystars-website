@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights - SkyStars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (Same as index.html) -->
+    <nav>
+        <div class="logo">SkyStars</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="flights.html" class="active">Flights</a></li>
+            <li><a href="#">Car Rentals</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+        <div class="language-selector">
+            <select>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Flight Search Section -->
+    <section class="flight-search">
+        <div class="container">
+            <h1>Find Your Perfect Flight</h1>
+            <form class="search-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="from">From</label>
+                        <input type="text" id="from" placeholder="City or airport">
+                    </div>
+                    <div class="form-group">
+                        <label for="to">To</label>
+                        <input type="text" id="to" placeholder="City or airport">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="departure">Departure</label>
+                        <input type="date" id="departure">
+                    </div>
+                    <div class="form-group">
+                        <label for="return">Return</label>
+                        <input type="date" id="return">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="passengers">Passengers</label>
+                        <select id="passengers">
+                            <option>1 Adult</option>
+                            <option>2 Adults</option>
+                            <option>Family</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Class</label>
+                        <select id="class">
+                            <option>Economy</option>
+                            <option>Premium Economy</option>
+                            <option>Business</option>
+                            <option>First Class</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit">Search Flights</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Flight Results Section -->
+    <section class="flight-results">
+        <div class="container">
+            <h2>Available Flights</h2>
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Sort by:</label>
+                    <select>
+                        <option>Best Match</option>
+                        <option>Price (Low to High)</option>
+                        <option>Price (High to Low)</option>
+                        <option>Duration</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Stops:</label>
+                    <div class="stops-filter">
+                        <label><input type="checkbox" checked> Non-stop</label>
+                        <label><input type="checkbox"> 1 Stop</label>
+                        <label><input type="checkbox"> 2+ Stops</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flight Card 1 -->
+            <div class="flight-card">
+                <div class="flight-info">
+                    <div class="airline">
+                        <img src="https://logo.clearbit.com/emirates.com" alt="Emirates">
+                        <span>Emirates</span>
+                    </div>
+                    <div class="timing">
+                        <div class="departure">
+                            <span class="time">08:00</span>
+                            <span class="location">DXB</span>
+                        </div>
+                        <div class="duration">
+                            <span>7h 30m</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="arrival">
+                            <span class="time">15:30</span>
+                            <span class="location">CDG</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <span class="stops">Non-stop</span>
+                        <span class="class">Economy</span>
+                    </div>
+                </div>
+                <div class="price">
+                    <span class="amount">$450</span>
+                    <button class="select-flight">Select</button>
+                </div>
+            </div>
+
+            <!-- Flight Card 2 -->
+            <div class="flight-card">
+                <div class="flight-info">
+                    <div class="airline">
+                        <img src="https://logo.clearbit.com/airfrance.com" alt="Air France">
+                        <span>Air France</span>
+                    </div>
+                    <div class="timing">
+                        <div class="departure">
+                            <span class="time">10:15</span>
+                            <span class="location">DXB</span>
+                        </div>
+                        <div class="duration">
+                            <span>8h 15m</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="arrival">
+                            <span class="time">18:30</span>
+                            <span class="location">CDG</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <span class="stops">1 Stop</span>
+                        <span class="class">Economy</span>
+                    </div>
+                </div>
+                <div class="price">
+                    <span class="amount">$380</span>
+                    <button class="select-flight">Select</button>
+                </div>
+            </div>
+
+            <!-- Flight Card 3 -->
+            <div class="flight-card">
+                <div class="flight-info">
+                    <div class="airline">
+                        <img src="https://logo.clearbit.com/qatarairways.com" alt="Qatar Airways">
+                        <span>Qatar Airways</span>
+                    </div>
+                    <div class="timing">
+                        <div class="departure">
+                            <span class="time">12:45</span>
+                            <span class="location">DXB</span>
+                        </div>
+                        <div class="duration">
+                            <span>9h 0m</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="arrival">
+                            <span class="time">21:45</span>
+                            <span class="location">CDG</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <span class="stops">1 Stop</span>
+                        <span class="class">Business</span>
+                    </div>
+                </div>
+                <div class="price">
+                    <span class="amount">$1200</span>
+                    <button class="select-flight">Select</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SkyStars</h3>
+                <p>Your global travel companion</p>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SkyStars. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
